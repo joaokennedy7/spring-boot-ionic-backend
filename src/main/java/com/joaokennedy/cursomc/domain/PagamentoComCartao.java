@@ -1,8 +1,11 @@
 package com.joaokennedy.cursomc.domain;
 
+import javax.persistence.Entity;
+
 import com.joaokennedy.cursomc.domain.enums.EstadoPagamento;
 
-public class PagamentoComCartao extends Pagamento{
+	@Entity
+	public class PagamentoComCartao extends Pagamento{
 	private static final long serialVersionUID = 1L;
 
 	private Integer numeroDeParcelas;

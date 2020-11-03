@@ -2,9 +2,12 @@ package com.joaokennedy.cursomc.domain;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+
 import com.joaokennedy.cursomc.domain.enums.EstadoPagamento;
 
-public class PagamentoComBoleto extends Pagamento{
+	@Entity
+	public class PagamentoComBoleto extends Pagamento{
 	private static final long serialVersionUID = 1L;
 	
 	private Date dataVencimento;
