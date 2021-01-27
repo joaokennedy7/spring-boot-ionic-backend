@@ -56,7 +56,7 @@ public class PedidoService {
 			ip.setPreco(produtoRepository.findOne(ip.getProduto().getId()).getPreco());
 			ip.setPedido(obj);
 		}
-		itemPedidoRepository.saveAll(obj.getItens());
+		itemPedidoRepository.saveA(obj.getItens());
 		return obj;
 	}
 }
